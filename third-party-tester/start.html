@@ -2,6 +2,10 @@
 <script>
 	document.cookie="thirdparty=yes; Max-Age=3600; SameSite=None; Secure";
 	document.location="complete.html";
+	
+	if(document.parent) {
+		document.parent.cookie="thirdparty=yes; Max-Age=3600; SameSite=None; Secure";
+	}
 
 </script>
 </body>
